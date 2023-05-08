@@ -4,11 +4,12 @@ function Palindrome(){
     console.log(text)
     let Result = document.querySelector('#result');
 
-    if(text == " "/*write the condition here */)
-        Result.innerHTML= "It is a Palimdrome" 
+    console.log(text.split("").reverse().join(""))
+    if(text === text.split("").reverse().join(""))
+        Result.innerHTML= "It is a Palindrome" 
 
     else     
-        Result.innerHTML= "It is not a Palimdrome" 
+        Result.innerHTML= "It is not a Palindrome" 
 }
 
 // input was it a car or a cat i saw 
